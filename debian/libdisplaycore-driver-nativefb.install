@@ -1,0 +1,3 @@
+NativeFB.cpp libraries/DisplayCore/NativeFB
+NativeFB.h libraries/DisplayCore/NativeFB
+examples/ libraries/DisplayCore/NativeFB

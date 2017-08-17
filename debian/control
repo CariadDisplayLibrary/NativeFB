@@ -1,0 +1,20 @@
+Source: libdisplaycore-driver-nativefb
+Section: libraries
+Priority: extra
+Maintainer: Matt Jenkins <matt@majenko.co.uk>
+Build-Depends: debhelper (>= 8.0.0)
+Standards-Version: 3.9.4
+
+Package: libdisplaycore-driver-nativefb
+Section: libraries
+Architecture: all
+XBSC-Group: DisplayCore
+XBSC-Subgroup: Drivers
+Depends: libdisplaycore-core
+Recommends: 
+Provides: NativeFB.h
+Description: Native Framebuffer (Linux) Driver
+ Direct access to the Linux framebuffer device for Raspberry Pi etc.
+
+
+
