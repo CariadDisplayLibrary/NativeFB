@@ -31,6 +31,8 @@
 #ifndef _NATIVEFB_H
 #define _NATIVEFB_H
 
+#ifdef linux
+
 #include <DisplayCore.h>
 
 #include <unistd.h>
@@ -78,4 +80,5 @@ class NativeFB : public DisplayCore {
         int _height;
 };
 
+#endif
 #endif

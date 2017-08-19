@@ -1,3 +1,4 @@
+#ifdef linux
 #include <NativeFB.h>
 
 int vt = -1;
@@ -193,3 +194,4 @@ int NativeFB::getWidth() {
 int NativeFB::getHeight() {
     return _height;
 }
+#endif
