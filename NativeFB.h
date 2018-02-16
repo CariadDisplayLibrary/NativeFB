@@ -66,7 +66,7 @@ class NativeFB : public DisplayCore {
         void setRotation(int r) { }
         void displayOn();
         void displayOff();
-        void invertDisplay(boolean b) { }
+        void invertDisplay(bool b) { }
 
         int getWidth();
         int getHeight();
