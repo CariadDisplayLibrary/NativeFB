@@ -17,6 +17,7 @@ void cleanupTty() {
 
 void NativeFB::initializeDevice() {
     // First attempt to switch to a new TTY.
+/*
     char temp[100];
     struct vt_stat vtst;
     int cvt = -1;
@@ -44,11 +45,11 @@ void NativeFB::initializeDevice() {
             }
         }
     }
-
-    _fd = open("/dev/fb0", O_RDWR);
+*/
+    _fd = open(_dev, O_RDWR);
 
     if (!_fd) {
-        fprintf(stderr, "Error opening /dev/fb0\r\n");
+        fprintf(stderr, "Error opening %s\r\n", _dev);
         exit(10);
     }
 

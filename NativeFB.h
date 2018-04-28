@@ -56,8 +56,11 @@ class NativeFB : public DisplayCore {
         uint8_t *_buffer;
         struct fb_var_screeninfo _vinfo;
         struct fb_fix_screeninfo _finfo;
+        const char *_dev;
 
     public:
+        NativeFB() : _dev("/dev/fb0") {}
+        NativeFB(const char *dev) : _dev(dev) {}
         void initializeDevice();
         void setPixel(int x, int y, color_t c);
         color_t colorAt(int x, int y);
