@@ -13,7 +13,7 @@ XBSC-Subgroup: Drivers
 Depends: libdisplaycore-core
 Recommends: 
 Provides: NativeFB.h
-Description: Native Framebuffer (Linux) Driver
+Description: Native Framebuffer (Linux)
  Direct access to the Linux framebuffer device for Raspberry Pi etc.
 
 
