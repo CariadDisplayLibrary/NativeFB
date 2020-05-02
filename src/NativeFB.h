@@ -33,7 +33,7 @@
 
 #ifdef linux
 
-#include <DisplayCore.h>
+#include <Cariad.h>
 
 #include <unistd.h>
 #include <fcntl.h>
@@ -49,7 +49,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-class NativeFB : public DisplayCore {
+class NativeFB : public Cariad {
     private:
         int _fd;
         int _tty;
